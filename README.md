@@ -1,14 +1,50 @@
----> Análise de Cancelamentos de Clientes
-Este projeto foi desenvolvido para uma empresa com uma base de mais de 800 mil clientes. A análise de dados visou identificar as principais causas de cancelamento de serviços e propor ações eficazes para reduzir 
-a taxa de cancelamento.
+# Python Insights - Analisando Dados com Python
 
----> Etapas do Projeto:
+## Case: Cancelamento de Clientes
 
-*  Importação e Tratamento de Dados: A base de dados foi carregada e tratada, removendo valores ausentes e corrigindo inconsistências.
-*  Análise Inicial: Verificamos a distribuição de clientes que cancelaram o serviço e calculamos a taxa de cancelamento.
-*  Exploração das Causas: Foram analisadas várias colunas para entender as correlações com os cancelamentos. Gráficos de distribuição ajudaram a visualizar essas relações.
-*  Propostas de Ações: A partir dos dados, propusemos algumas ações para reduzir o número de cancelamentos, como evitar contratos mensais, alertar quando um cliente realizar múltiplas chamadas para o call center
-e estabelecer alertas para clientes com atraso no pagamento.
+Este projeto utiliza **Python** para analisar dados de cancelamento de clientes e identificar ações estratégicas para reduzir a taxa de cancelamento de uma base com mais de 800 mil clientes. A análise é realizada por meio de ferramentas como **pandas**, **numpy** e **plotly**.
 
----> Impacto Esperado:
-A partir dessas ações, a taxa de cancelamento pode ser reduzida de 56,7% para 18,3%, proporcionando uma melhora significativa no desempenho da empresa.
+---
+
+## Objetivo
+
+Entender os principais motivos de cancelamento de clientes e propor soluções baseadas nos dados para reduzir a taxa de cancelamento, que atualmente é de **56,7%**.
+
+---
+
+## Tecnologias Utilizadas
+
+- **Python**
+- **Pandas**: Manipulação de dados
+- **Plotly**: Criação de gráficos interativos
+- **Jupyter Notebook**: Ambiente de desenvolvimento interativo
+
+---
+
+## Passo a Passo do Projeto
+
+### 1. Importação e Visualização dos Dados
+- Importação do arquivo `cancelamentos_sample.csv`.
+- Remoção de colunas irrelevantes para a análise.
+- Verificação e exclusão de valores ausentes na base de dados.
+
+### 2. Análise Inicial dos Cancelamentos
+- Contagem total e percentual de clientes que cancelaram versus os que permaneceram ativos.
+
+### 3. Identificação de Causas de Cancelamento
+- Análise de como diferentes colunas impactam a decisão de cancelamento.
+- Criação de gráficos interativos para explorar padrões.
+
+### 4. Propostas de Soluções Baseadas nos Dados
+A análise revelou os seguintes pontos críticos:
+- **Clientes com contrato mensal**: Alta taxa de cancelamento.
+  - **Solução**: Oferecer descontos em contratos anuais e trimestrais.
+- **Clientes que ligam mais de 4 vezes para o call center**: Alta taxa de cancelamento.
+  - **Solução**: Resolver problemas em até 3 ligações.
+- **Clientes com atrasos superiores a 20 dias**: Alta taxa de cancelamento.
+  - **Solução**: Implementar políticas para resolver atrasos em até 10 dias.
+
+### 5. Simulação de Redução da Taxa de Cancelamento
+Após aplicar as soluções:
+- **Taxa de cancelamento antes**: 56,7%
+- **Taxa de cancelamento após**: 18,3%
